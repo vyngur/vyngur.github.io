@@ -1,14 +1,17 @@
+/* remover componentes de estilo das listas */
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+/* posicionamento dos componentes do menu */
 .navbarItem {
     float: left;
     text-align: center;
 }
 
+/* formatação do botão do menu */
 .navbarItem a {
     display: block;
     padding-right: 25px;
@@ -17,16 +20,19 @@
     padding-top: 10px;
 }
 
+/* formatação do estilo associado ao evento "hover" do botão do menu */
 .navbarItem a:hover, a:active {
     border: 1px solid #FFF3E0;
     text-decoration: none;
 }
 
+/* formatação do estilo associado à hiperligação e ao estado "visitado" do botão do menu */
 .navbarItem a:link, a:visited {
     color: #FFF3E0;
     text-decoration: none;
 }
 
+/* formatação do corpo da página */
 body {
     margin: auto;
     background-color: black;
@@ -36,10 +42,12 @@ body {
     position: relative;
 }
 
+/* definição do espaçamento do conteúdo do cabeçalho vs margem da página */
 header {
     padding: 1%;
 }
 
+/* formatação do aspecto do texto presente no menu */
 header.menu{
     text-transform: uppercase;
     text-align: center;
@@ -49,12 +57,14 @@ header.menu{
     color: #FFF3E0;
 }
 
-.hrStyle {
+/* formatação do aspecto da régua horizontal */
+hr {
     background-color: #FFF3E0;
     border: 0;
     height: 1px;
 }
 
+/* formatação do aspecto comum do texto presente no título, lista desordenada e parágrafo  */
 h1, ul, p {
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -63,21 +73,32 @@ h1, ul, p {
     margin-right: 10%;
 }
 
+/* formatação do texto do título */
 h1 {
     font-weight: bold;
     font-size: 2em;
     margin-top: 10%;
 }
 
+/* formatação do aspecto comum do texto presente no parágrado, lista desordenada e item da lista desordenada  */
 p, ul, li {
     font-size: 1em;
 }
 
+/* formatação do estilo comum associado aos 4 estados/eventos das hiperligações do corpo da página */
 a:link, a:hover, a:visited, a:active {
     color: #FFF3E0;
     text-decoration: underline;
 }
 
+/* formatação do estilo associado ao evento "hover" das hiperligações do corpo da página */
 a:hover {
     text-decoration: none;
+}
+
+/* formatação do estilo associado aos comentários do código no final da página */
+.tagComment {
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFF3E0;
+    background-color: black;
 }
