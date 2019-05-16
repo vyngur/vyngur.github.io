@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>E-fólio B de LabSSW</title>
+</head>
+
+<!-- menu de navegação -->
+
+<body>
+    <header class="menu">
+        <div class="navbar">
+            <div class="navbarItem"><a href=index.html>inicio</a></div>
+            <div class="navbarItem"><a href=pag4.html>registo</a></div>
+            <div class="navbarItem"><a href=pag5.html>login</a></div>
+        </div>
+    </header>
+
+    <h1>Criar conta</h1>
+    <form name="newReg" onsubmit="return valForm()" method="POST" action="/pag3.html">
+        <fieldset>
+            <legend>Novo registo</legend>
+            Nome:<br>
+            <input type="text" name="name"><br>
+            <div id="errorName"></div><br>
+            Email:<br>
+            <input type="text" name="email"><br>
+            <div id="errorEmail"></div><br>
+            Morada:<br>
+            <input type="text" name="address"><br>
+            <div id="errorAddress"></div><br>
+            Código Postal:<br>
+            <input type="text" name="zip">
+            <div id="errorZip"></div><br>
+            Localidade:<br>
+            <input type="text" name="city"><br>
+            <div id="errorCity"></div><br>
+            Password:<br>
+            <input type="password" name="password"><br>
+            <div id="errorPassword"></div><br>
+            <!-- <div class="legenda">A password deve ser constituída por 8 ou mais caracteres.<br>
+                Deve ainda conter pelo menos 1 caracter especial, 1 maiúscula e 4 digitos.</div><br> -->
+            Confirmar password:<br>
+            <input type="password" name="passwordc"><br>
+            <div id="errorPasswordC"></div><br>
+            <input type="submit" value="Submeter"><br>
+    </fieldset>
+</form>
+
+<script src="js/valform.js"></script>
+
+</body>
+
+</html>

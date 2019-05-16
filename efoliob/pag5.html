@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>E-fólio B de LabSSW</title>
+</head>
+
+<!-- menu de navegação -->
+
+<body>
+    <header class="menu">
+        <div class="navbar">
+            <div class="navbarItem"><a href=index.html>inicio</a></div>
+            <div class="navbarItem"><a href=pag4.html>registo</a></div>
+            <div class="navbarItem"><a href=pag5.html>login</a></div>
+        </div>
+    </header>
+
+    <h1>Efectuar login</h1>
+    <form name="login" onsubmit="return loginForm()" method="POST" action="/pag2.html">
+        <fieldset>
+            <legend>Introduza os seguintes dados</legend>
+            Email:<br>
+            <input type="text" name="loginEmail"><br>
+            <div id="errorLoginEmail"></div><br>
+            Password:<br>
+            <input type="password" name="loginPassword"><br>
+            <div id="errorLoginPassword"></div><br>
+            <input type="submit" value="Submeter"><br>
+        </fieldset>
+    </form>
+
+    <script src="js/valform.js"></script>
+
+</body>
+
+</html>

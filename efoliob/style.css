@@ -1,0 +1,104 @@
+/* remover componentes de estilo das listas */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* posicionamento dos componentes do menu */
+.navbarItem {
+    float: left;
+    text-align: center;
+}
+
+/* formatação do botão do menu */
+.navbarItem a {
+    display: block;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* formatação do estilo associado ao evento "hover" do botão do menu */
+.navbarItem a:hover, a:active {
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+/* formatação do estilo associado à hiperligação e ao estado "visitado" do botão do menu */
+.navbarItem a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* formatação do corpo da página */
+body {
+    margin: auto;
+    background-color: burlywood;
+    /* background-image: url("images/body_bg.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* definição do espaçamento do conteúdo do cabeçalho vs margem da página */
+header {
+    padding: 1%;
+}
+
+/* formatação do aspecto do texto presente no menu */
+header.menu{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+}
+
+/* formatação do aspecto da régua horizontal */
+hr {
+    background-color: black;
+    border: 0;
+    height: 1px;
+}
+
+/* formatação do aspecto comum do texto presente no título, lista desordenada e parágrafo  */
+h1, ul, p {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* formatação do texto do título */
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 10%;
+}
+
+/* formatação do aspecto comum do texto presente no parágrado, lista desordenada e item da lista desordenada  */
+p, ul, li {
+    font-size: 1em;
+}
+
+/* formatação do estilo comum associado aos 4 estados/eventos das hiperligações do corpo da página */
+a:link, a:hover, a:visited, a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+/* formatação do estilo associado ao evento "hover" das hiperligações do corpo da página */
+a:hover {
+    text-decoration: none;
+}
+
+/* formatação do estilo associado aos comentários do código no final da página */
+.tagComment {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: black;
+}
