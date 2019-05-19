@@ -117,6 +117,8 @@ function loginForm() {
     // var user = document.login.user.value;
     var loginEmail = document.login.loginEmail.value;
     var loginPassword = document.login.loginPassword.value;
+    endDate = new Date(endDate.getTime() + (365 * 24 * 60 * 60 * 1000));
+    
 
     // Variável de controlo para submissão do formulário
     var valLoginCtrl = true;
@@ -136,6 +138,7 @@ function loginForm() {
             valLoginCtrl = false;
         }
         else document.getElementById("errorLoginPassword").innerHTML = "";
+        document.cookie = "name=" + loginEmail + "; expires=" + endDate.toUTCString();
 
-        return valLoginCtrl;
+        return valLoginCtrl;       
 }

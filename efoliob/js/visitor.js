@@ -1,13 +1,14 @@
-var name = document.newVisitor.name.value;
+var endDate = new Date();
+var cookie = document.cookie.value;
 
-function createCookie() {
-    // estrutura da cookie --> key-value; expiration_date; path; domain;
+endDate = new Date(endDate.getTime() + (365 * 24 * 60 * 60 * 1000));
 
-    if(document.cookie.length == 0) {
-        document.cookie = "visitorName=" + name + "; max-age=365 * 24 * 60 * 60";
+if (document.cookie.length == 0) {
+    document.cookie = "name=1stVisit; expires=" + endDate.toUTCString();
+    document.getElementById("greet").innerHTML = "Hi and welcome to our website!";
+} else {
+    if (cookie != 0) {
+        document.cookie = "name=Not1stVisit; expires=" + endDate.toUTCString();
+        document.getElementById("greet").innerHTML = "Hello again! How's it going?";
     }
-    else
-    var getName = [name.split([";"])];
-    console.log(getName[0]);
-    document.getElementById("newVisitor").innerHTML = getName[0];
 }
