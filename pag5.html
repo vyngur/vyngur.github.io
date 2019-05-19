@@ -5,43 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>E-fólio A de LabSSW</title>
+    <title>E-fólio B de LabSSW</title>
 </head>
 
 <body>
-    <header class="menu">
-        <div class="navbar">
-            <div class="navbarItem"><a href=index.html>inicio</a></div>
-            <div class="navbarItem"><a href=pag2.html>wsl e vscode</a></div>
-            <div class="navbarItem"><a href=pag3.html>nginx, mariadb e php</a></div>
-            <div class="navbarItem"><a href=pag4.html>git?</a></div>
-            <div class="navbarItem"><a href=pag5.html>sobre</a></div>
-        </div>
-    </header>
+<div class="wrapper">
+    <div class="box header" id="greet"></div>
+    <a href="/index.html"><div class="home">home</div></a>
+    <a href="/pag5.html"><div class="box nav1">login</div></a>
+    <a href="/pag4.html"><div class="box nav2">sign up</div></a>
+    <div class="box content">
+        
 
-    <h1>Sobre a experiência:<br>Recursos e não só.</h1>
-    <p>No fim acabou por ser um sprint. Devia ter havido mais planeamento e objectividade, mas sou demasiado curioso :D
-    </p>
-    <p>Recursos utilizados no desenvolvimento do e-fólio:</p>
-    <ul>
-        <li><a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a></li>
-        <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live
-                Server extension for VSCode</a></li>
-        <li><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a></li>
-    </ul>
-    <br>
-    <p>Testado com sucesso em:</p>
-    <ul>
-        <li><a href="https://www.google.com/chrome/" target="_blank">Google Chrome Version 73.0.3683.103 (Official
-                Build) (64-bit)</a></li>
-        <li><a href="https://www.mozilla.org/en-US/firefox/" target="_blank">Mozilla Firefox Version 66.0.2 (64-bit)</a>
-        </li>
-    </ul>
-    <br>
-    <p>Validação</p>
-    <ul>
-        <li><a href="https://validator.w3.org/unicorn/" target="_blank">Unicorn - W3C's Unified Validator</a></li>
-    </ul>
+        <h1>Efectuar login</h1>
+        <form name="login" onsubmit="return loginForm()" method="POST" action="/pag2.html">
+            <fieldset>
+                <legend>Introduza os seguintes dados</legend>
+                Email:<br>
+                <input type="text" name="loginEmail"><br>
+                <div id="errorLoginEmail"></div><br>
+                Password:<br>
+                <input type="password" name="loginPassword"><br>
+                <div id="errorLoginPassword"></div><br>
+                <input type="submit" value="Submeter"><br>
+            </fieldset>
+        </form>
+    </div>
+    <div class="box footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia iste temporibus minus corrupti facere ullam incidunt culpa beatae, iure quam nobis laborum natus molestiae sint modi illo eaque cumque rem corporis consequatur aliquid! Culpa, nulla libero debitis similique aliquid necessitatibus iure possimus iusto dignissimos rerum reprehenderit at corrupti quam, voluptatum fuga, quis quaerat ullam ipsum ad ut? Aliquam, aliquid architecto eaque esse maxime dignissimos, dolorem exercitationem ab vero veniam optio! Labore eligendi fugit obcaecati perferendis at tenetur dolorem quam quibusdam ratione aperiam sed officiis id aspernatur, numquam delectus! Ab esse, consectetur sed debitis veniam aspernatur porro architecto cupiditate tempore.</div>
+</div>
+
+<script src="js/valform.js"></script>
+<script src="js/visitor.js"></script>
+
 </body>
-
 </html>

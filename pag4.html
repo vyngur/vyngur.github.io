@@ -5,33 +5,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>E-fólio A de LabSSW</title>
+    <title>E-fólio B de LabSSW</title>
 </head>
 
 <body>
-    <header class="menu">
-        <div class="navbar">
-            <div class="navbarItem"><a href=index.html>inicio</a></div>
-            <div class="navbarItem"><a href=pag2.html>wsl e vscode</a></div>
-            <div class="navbarItem"><a href=pag3.html>nginx, mariadb e php</a></div>
-            <div class="navbarItem"><a href=pag4.html>git?</a></div>
-            <div class="navbarItem"><a href=pag5.html>sobre</a></div>
-        </div>
-    </header>
+<div class="wrapper">
+    <div class="box header" id="greet"></div>
+    <a href="/index.html"><div class="home">home</div></a>
+    <a href="/pag5.html"><div class="box nav1">login</div></a>
+    <a href="/pag4.html"><div class="box nav2">sign up</div></a>
+    <div class="box content">
+        
 
-    <h1>Controlo de versões e... alojamento?<br>GitHub</h1>
-    <p>Após todas as decisões ilustradas anteriormente, deparei-me com duas situações potencialmente frustrantes. Uma
-        delas era até bastante previsível.<br>
-        Ficando o trabalho alojado em casa, havia sempre o risco de uma qualquer falha de energia, do ISP, uma
-        actualização do Windows... um sem número de situações poderia comprometer a disponibilidade da plataforma e
-        consequente acesso ao trabalho a desenvolver.</p>
-    <p>Por outro lado, quando se iniciou o prazo do e-fólio, não tinha sequer uma ideia clara sobre o que iria
-        desenvolver, ou qual o tema a tratar. Isso, por si só, iria implicar várias tentativas e rascunhos até conseguir
-        chegar a um ponto em que consideraria a forma final do projecto a elaborar.</p>
-    <p>Foi aqui que surgiu o <a href="https://github.com/" target="_blank">GitHub</a> como resposta a ambas as
-        problemáticas. Iria conseguir iterar e reutilizar as várias tentativas que fosse desenvolvendo, sincronizar o
-        trabalho em curso entre o laptop e o desktop, e acabei por descobrir a <a href="https://pages.github.com/"
-            target="_blank">possibilidade de alojar páginas estáticas na plataforma.</a></p>
+<h1>Criar conta</h1>
+<form name="newReg" onsubmit="return valForm()" method="POST" action="/pag3.html">
+    <fieldset>
+        <legend>Novo registo</legend>
+        Nome:<br>
+        <input type="text" name="name"><br>
+        <div id="errorName"></div><br>
+        Email:<br>
+        <input type="text" name="email"><br>
+        <div id="errorEmail"></div><br>
+        Morada:<br>
+        <input type="text" name="address"><br>
+        <div id="errorAddress"></div><br>
+        Código Postal:<br>
+        <input type="text" name="zip">
+        <div id="errorZip"></div><br>
+        Localidade:<br>
+        <input type="text" name="city"><br>
+        <div id="errorCity"></div><br>
+        Password:<br>
+        <input type="password" name="password"><br>
+        <div id="errorPassword"></div><br>
+        Confirmar password:<br>
+        <input type="password" name="passwordc"><br>
+        <div id="errorPasswordC"></div><br>
+        <input type="submit" value="Submeter"><br>
+</fieldset>
+</form>
+    </div>
+    <div class="box footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia iste temporibus minus corrupti facere ullam incidunt culpa beatae, iure quam nobis laborum natus molestiae sint modi illo eaque cumque rem corporis consequatur aliquid! Culpa, nulla libero debitis similique aliquid necessitatibus iure possimus iusto dignissimos rerum reprehenderit at corrupti quam, voluptatum fuga, quis quaerat ullam ipsum ad ut? Aliquam, aliquid architecto eaque esse maxime dignissimos, dolorem exercitationem ab vero veniam optio! Labore eligendi fugit obcaecati perferendis at tenetur dolorem quam quibusdam ratione aperiam sed officiis id aspernatur, numquam delectus! Ab esse, consectetur sed debitis veniam aspernatur porro architecto cupiditate tempore.</div>
+</div>
+
+<script src="js/valform.js"></script>
+<script src="js/visitor.js"></script>
+
 </body>
-
 </html>
