@@ -49,7 +49,7 @@ function valForm() {
     // Rotina de validação do campo "Nome" e apresentação da mensagem de erro
     if( nameRE.test(name) == false || name == "" || name == null) {
         document.newReg.name.focus();
-        document.getElementById("errorName").innerHTML = "Verifique o nome";
+        document.getElementById("errorName").innerHTML = "Verifique o nome <br> Apenas pode conter letras e tem de começar com uma maiúscula";
         valCtrl = false;
     }
     else document.getElementById("errorName").innerHTML = "";
@@ -90,7 +90,7 @@ function valForm() {
     // Rotina de validação do campo "Password" e apresentação da mensagem de erro
     if( passwordRE.test(password) == false || password == "" || password == null ) {
         document.newReg.password.focus();
-        document.getElementById("errorPassword").innerHTML = "Verifique a password";
+        document.getElementById("errorPassword").innerHTML = "Verifique a password <br> Tem de possuir pelo menos 1 digito, 1 maiúscula e 1 caracter especial (_\-#!=)";
         valCtrl = false;
     }
     else document.getElementById("errorPassword").innerHTML = "";
@@ -134,7 +134,7 @@ function loginForm() {
         // Rotina de validação do campo "Password" e apresentação da mensagem de erro
         if( passwordRE.test(loginPassword) == false || loginPassword == "" || loginPassword == null ) {
             document.login.loginPassword.focus();
-            document.getElementById("errorLoginPassword").innerHTML = "Verifique a password";
+            document.getElementById("errorLoginPassword").innerHTML = "Verifique a password <br> Tem de possuir pelo menos 1 digito, 1 maiúscula e 1 caracter especial (_\-#!=)";
             valLoginCtrl = false;
         }
         else document.getElementById("errorLoginPassword").innerHTML = "";
