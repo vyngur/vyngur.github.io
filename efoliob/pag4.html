@@ -8,50 +8,49 @@
     <title>E-fólio B de LabSSW</title>
 </head>
 
-<!-- menu de navegação -->
-
 <body>
-    <header class="menu">
-        <div class="navbar">
-            <div class="navbarItem"><a href=index.html>inicio</a></div>
-            <div class="navbarItem"><a href=pag4.html>registo</a></div>
-            <div class="navbarItem"><a href=pag5.html>login</a></div>
-        </div>
-    </header>
+<div class="wrapper">
+    <div class="box header" id="greet"></div>
+    <a href="/index.html"><div class="home">home</div></a>
+    <a href="/pag5.html"><div class="box nav1">login</div></a>
+    <a href="/pag4.html"><div class="box nav2">sign up</div></a>
+    <div class="box content">
+        
 
-    <h1>Criar conta</h1>
-    <form name="newReg" onsubmit="return valForm()" method="POST" action="/pag3.html">
-        <fieldset>
-            <legend>Novo registo</legend>
-            Nome:<br>
-            <input type="text" name="name"><br>
-            <div id="errorName"></div><br>
-            Email:<br>
-            <input type="text" name="email"><br>
-            <div id="errorEmail"></div><br>
-            Morada:<br>
-            <input type="text" name="address"><br>
-            <div id="errorAddress"></div><br>
-            Código Postal:<br>
-            <input type="text" name="zip">
-            <div id="errorZip"></div><br>
-            Localidade:<br>
-            <input type="text" name="city"><br>
-            <div id="errorCity"></div><br>
-            Password:<br>
-            <input type="password" name="password"><br>
-            <div id="errorPassword"></div><br>
-            <!-- <div class="legenda">A password deve ser constituída por 8 ou mais caracteres.<br>
-                Deve ainda conter pelo menos 1 caracter especial, 1 maiúscula e 4 digitos.</div><br> -->
-            Confirmar password:<br>
-            <input type="password" name="passwordc"><br>
-            <div id="errorPasswordC"></div><br>
-            <input type="submit" value="Submeter"><br>
-    </fieldset>
+<h1>Criar conta</h1>
+<form name="newReg" onsubmit="return valForm()" method="POST" action="/pag3.html">
+    <fieldset>
+        <legend>Novo registo</legend>
+        Nome:<br>
+        <input type="text" name="name"><br>
+        <div id="errorName"></div><br>
+        Email:<br>
+        <input type="text" name="email"><br>
+        <div id="errorEmail"></div><br>
+        Morada:<br>
+        <input type="text" name="address"><br>
+        <div id="errorAddress"></div><br>
+        Código Postal:<br>
+        <input type="text" name="zip">
+        <div id="errorZip"></div><br>
+        Localidade:<br>
+        <input type="text" name="city"><br>
+        <div id="errorCity"></div><br>
+        Password:<br>
+        <input type="password" name="password"><br>
+        <div id="errorPassword"></div><br>
+        Confirmar password:<br>
+        <input type="password" name="passwordc"><br>
+        <div id="errorPasswordC"></div><br>
+        <input type="submit" value="Submeter"><br>
+</fieldset>
 </form>
+    </div>
+    <div class="box footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia iste temporibus minus corrupti facere ullam incidunt culpa beatae, iure quam nobis laborum natus molestiae sint modi illo eaque cumque rem corporis consequatur aliquid! Culpa, nulla libero debitis similique aliquid necessitatibus iure possimus iusto dignissimos rerum reprehenderit at corrupti quam, voluptatum fuga, quis quaerat ullam ipsum ad ut? Aliquam, aliquid architecto eaque esse maxime dignissimos, dolorem exercitationem ab vero veniam optio! Labore eligendi fugit obcaecati perferendis at tenetur dolorem quam quibusdam ratione aperiam sed officiis id aspernatur, numquam delectus! Ab esse, consectetur sed debitis veniam aspernatur porro architecto cupiditate tempore.</div>
+</div>
 
 <script src="js/valform.js"></script>
+<script src="js/visitor.js"></script>
 
 </body>
-
 </html>

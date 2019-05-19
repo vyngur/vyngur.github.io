@@ -1,104 +1,69 @@
-/* remover componentes de estilo das listas */
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* posicionamento dos componentes do menu */
-.navbarItem {
-    float: left;
-    text-align: center;
-}
-
-/* formatação do botão do menu */
-.navbarItem a {
-    display: block;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-/* formatação do estilo associado ao evento "hover" do botão do menu */
-.navbarItem a:hover, a:active {
-    border: 1px solid black;
-    text-decoration: none;
-}
-
-/* formatação do estilo associado à hiperligação e ao estado "visitado" do botão do menu */
-.navbarItem a:link, a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-/* formatação do corpo da página */
 body {
-    margin: auto;
-    background-color: burlywood;
-    /* background-image: url("images/body_bg.png"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* definição do espaçamento do conteúdo do cabeçalho vs margem da página */
-header {
-    padding: 1%;
+.wrapper {
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    grid-template-areas:
+                        "header home nav1 nav2"
+                        "content content content content"
+                        "footer footer footer footer";
+    padding: 10px;
 }
 
-/* formatação do aspecto do texto presente no menu */
-header.menu{
-    text-transform: uppercase;
-    text-align: center;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: black;
+.header, .home, .nav1, .nav2, .footer {
+    padding: 15px 30px;
 }
 
-/* formatação do aspecto da régua horizontal */
-hr {
-    background-color: black;
-    border: 0;
-    height: 1px;
-}
-
-/* formatação do aspecto comum do texto presente no título, lista desordenada e parágrafo  */
-h1, ul, p {
+.header {
+    grid-area: header;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    /* border-top-right-radius: 10px; */
     text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-/* formatação do texto do título */
-h1 {
     font-weight: bold;
-    font-size: 2em;
-    margin-top: 10%;
 }
 
-/* formatação do aspecto comum do texto presente no parágrado, lista desordenada e item da lista desordenada  */
-p, ul, li {
-    font-size: 1em;
+.home {
+    grid-area: home;
+    background-color: #05386b;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-/* formatação do estilo comum associado aos 4 estados/eventos das hiperligações do corpo da página */
-a:link, a:hover, a:visited, a:active {
-    color: black;
-    text-decoration: underline;
+.nav1 {
+    grid-area: nav1;
+    background-color: #05386b;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-/* formatação do estilo associado ao evento "hover" das hiperligações do corpo da página */
-a:hover {
-    text-decoration: none;
+.nav2 {
+    grid-area: nav2;
+    border-top-right-radius: 10px;
+    background-color: #5cdb95;
+    color: #05386b;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-/* formatação do estilo associado aos comentários do código no final da página */
-.tagComment {
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
-    background-color: black;
+.content {
+    grid-area: content;
+    background-color: #fff;
+    padding: 20px 50px;
+    text-align: justify;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #000;
+    color: #fff;
 }
